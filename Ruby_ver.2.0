@@ -408,7 +408,8 @@ end
 if cmd == "go"
 
   attachment_disk_filename.each do |attachment_disk_filename|
-    delete_files = "/home/www/redmine.taketo.jp.net/redmine/files/" + attachment_disk_filename     
+              # redmineの添付ファイルディレクトリを指定
+    delete_files = "/home/www/redmine/files/" + attachment_disk_filename     
      if delete_files == true  then
      File.unlink *delete_files
     end
