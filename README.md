@@ -50,6 +50,18 @@ if cmd == "go"
 ruby script.rb
 ```
 
+出力されたProjectのうち除外したいものがあれば以下の様に
+Project名を追記して除外する。
+
+```
+     ######## //に除外sitaProject名を書く
+     # ex.)
+     # /hogehogeプロジェクト/
+     #
+  
+     if /hogehogeプロジェクト/ !~ not_update_project2.name
+```
+
 ##### 更新されていないProjectの削除
 ```
 ruby script.rb go
