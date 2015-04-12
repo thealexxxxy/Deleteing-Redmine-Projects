@@ -13,6 +13,7 @@ Redmineでプロジェクトが増えてくると
 ファイルの編集
 ##### 1.DBの関連など環境に合わせて編集する
 DBに接続
+```
 ActiveRecord::Base.establish_connection(
             :adapter  => 'mysql2',
             :host     => 'localhost',
@@ -20,30 +21,39 @@ ActiveRecord::Base.establish_connection(
             :password => 'hogehoge',
             :database => 'hogehoge'
 )
-
+```
 
 ##### 2.更新期限の設定
+```
 from = Time.now
 to   = from - 2.year
+```
+
 上記の設定では2年以上更新されていないプロジェクトを抽出する
 
+```
 to   = from - 6.month
+```
 また、6ヶ月間など月単位で指定したい時は上記のように設定
 
 ##### 3.redmine添付ファイルのディレクトリの指定
-
+```
 if cmd == "go"
 
   attachment_disk_filename.each do |attachment_disk_filename|
     delete_files = "/home/www/redmine/files/" + attachment_disk_filename   
-
+```
 ### Runing script
 
 ###### 更新されていないProjectの抽出
+```
 ruby script.rb
+```
 
 ###### 更新されていないProjectの削除¥
+```
 ruby script.rb go
+```
   
 
 
