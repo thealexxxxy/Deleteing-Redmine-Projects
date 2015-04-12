@@ -45,12 +45,12 @@ if cmd == "go"
 ```
 ### Runing script
 
-###### 更新されていないProjectの抽出
+##### 更新されていないProjectの抽出
 ```
 ruby script.rb
 ```
 
-###### 更新されていないProjectの削除¥
+##### 更新されていないProjectの削除
 ```
 ruby script.rb go
 ```
