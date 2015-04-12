@@ -48,7 +48,7 @@ if cmd == "go"
 
 ##### 更新されていないProjectの抽出
 ```
-ruby script.rb
+$ ruby script.rb
 ```
 
 出力されたProjectのうち除外したいものがあれば以下の様に
@@ -65,7 +65,7 @@ Project名を追記して除外する。
 
 ##### 更新されていないProjectの削除
 ```
-ruby script.rb go
+$ ruby script.rb go
 ```
   
 
