@@ -36,7 +36,7 @@ if cmd == "go"
   attachment_disk_filename.each do |attachment_disk_filename|
     delete_files = "/home/www/redmine/files/" + attachment_disk_filename   
 
-### 実行
+### Runing script
 
 
 ruby 
